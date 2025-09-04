@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cookie, Geist, Geist_Mono, Imperial_Script, Lobster } from "next/font/google";
 import "./globals.css";
 import { SheetProvider } from "@/contexts/SheetContext";
 
@@ -11,6 +11,24 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const cookie = Cookie({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-cookie",
+});
+
+const imperial = Imperial_Script({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-imperial-script",
+});
+
+const lobster = Lobster({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-lobster",
 });
 
 export const metadata: Metadata = {
@@ -25,10 +43,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <SheetProvider>
-          {children}
-        </SheetProvider>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${cookie.variable} ${imperial.variable} ${lobster.variable} flex min-h-screen justify-center bg-gray-100`}>
+        <div className="w-full max-w-[480px] bg-white min-h-screen shadow-md overflow-hidden relative">
+          <SheetProvider>
+            {children}
+          </SheetProvider>
+        </div>
       </body>
     </html>
   );
