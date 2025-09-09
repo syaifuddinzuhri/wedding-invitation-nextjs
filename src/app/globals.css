@@ -26,3 +26,67 @@ a {
 .font-lobster {
   font-family: var(--font-lobster);
 }
+
+.main-color {
+  color: #795411;
+}
+
+.motif-1 {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  z-index: -1;
+}
+
+.section {
+  position: relative;
+}
+
+.bg-box {
+  backdrop-filter: blur(2px);
+}
+
+.opening-page {
+  background-color: #fff7e4;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.opening-page::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/motif-14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.opening-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.motif-2 {
+  width: 70%;
+}
