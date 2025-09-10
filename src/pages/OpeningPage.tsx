@@ -6,7 +6,11 @@ import { useSheet } from "@/contexts/SheetContext";
 import { useSearchParams } from "next/navigation";
 import React from "react";
 
-const OpeningPage = () => {
+interface OpeningPageProps {
+  openButton: () => void;
+}
+
+const OpeningPage = ({ openButton }: OpeningPageProps) => {
   const { data } = useSheet();
 
   const searchParams = useSearchParams();
@@ -17,17 +21,24 @@ const OpeningPage = () => {
   );
 
   if (!data || data.length === 0) {
-    return <LoadingPage />;
+    return <></>;
+  }
+
+  if (!guestData) {
+    return <></>;
   }
 
   return (
     <div className="min-h-screen relative bg-white section opening-page">
       <div className="opening-content">
         <img src={"/images/motif-3.webp"} className="motif-1" alt="" />
-        <div className="section-content mt-8">
+        <div className="section-content">
           <img src={"/images/motif-9.svg"} className="" alt="" />
           <h1 className="font-cookie text-5xl text-center main-color">
             Wedding Invitation
+          </h1>
+          <h1 className="font-lobster text-3xl text-center main-color">
+            Rikha & Solihin
           </h1>
           <div className="flex flex-col items-center">
             <img
@@ -40,6 +51,12 @@ const OpeningPage = () => {
             </h1>
           </div>
           {guestData && <GuestBox guest={guestData} />}
+          <button
+            onClick={openButton}
+            className="cursor-pointer bg-yellow-700 hover:bg-yellow-800 hover:shadow-lg main-color-2 font-medium py-2 px-8 rounded-full transition"
+          >
+            Buka Undangan
+          </button>
         </div>
       </div>
     </div>
@@ -47,10 +64,3 @@ const OpeningPage = () => {
 };
 
 export default OpeningPage;
-
-{
-  /* <h1 className="font-cookie text-4xl">Wedding Invitation</h1>
-      <h1 className="font-imperial text-4xl">Save the Date</h1>
-      <h1 className="font-lobster text-4xl">Roikhatul Jannah</h1>
-      <h1 className="font-lobster text-4xl">Muhammad Solihin</h1> */
-}

@@ -23,12 +23,39 @@ a {
   font-family: var(--font-imperial-script);
 }
 
+.font-roboto-slab {
+  font-family: var(--font-roboto-slab);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-pacifico {
+  font-family: var(--font-pacifico);
+}
+
 .font-lobster {
   font-family: var(--font-lobster);
 }
 
+.font-italiana {
+  font-family: var(--font-italiana);
+}
+
+.bg-color {
+  background-color: #fff7e4;
+}
+
+.bg-color-2 {
+  background-color: #795411;
+}
+
 .main-color {
   color: #795411;
+}
+.main-color-2 {
+  color: #fff7e4;
 }
 
 .motif-1 {
@@ -89,4 +116,83 @@ a {
 
 .motif-2 {
   width: 70%;
+}
+
+.home-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/motif-14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.people-section #motif-1 {
+  position: absolute;
+  bottom: 0;
+  width: 25%;
+  left: 10px;
+  transform: rotate(90deg);
+}
+
+.people-section #motif-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+}
+
+.people-section #motif-3 {
+  position: absolute;
+  top: 10px;
+  width: 30%;
+  left: 0;
+  /* transform: scaleX(-1); */
+}
+
+.people-section #motif-4 {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 30%;
+}
+
+.countdown-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/motif-14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scaleY(-1);
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.event-section .motif-5 {
+  position: absolute;
+  top: 10px;
+  width: 25%;
+  left: 0;
+  transform: scaleX(-1);
+}
+
+.event-section .motif-6 {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 25%;
 }

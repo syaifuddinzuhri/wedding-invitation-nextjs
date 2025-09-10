@@ -1,24 +1,28 @@
 import { google } from "googleapis";
 import credentials from "@/config/credentials.json";
 
-export async function GET() {
-    try {
-        const auth = new google.auth.GoogleAuth({
-            credentials,
-            scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
-        });
+export async function GET(request: Request) {
+  try {
+    const { searchParams } = new URL(request.url);
+    const sheetId = searchParams.get("sheetId") || "";
+    const sheetName = searchParams.get("sheetName") || "";
 
-        const sheets = google.sheets({ version: "v4", auth });
+    const auth = new google.auth.GoogleAuth({
+      credentials,
+      scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
+    });
 
-        const response = await sheets.spreadsheets.values.get({
-            spreadsheetId: "14lG4SV33sE9to0izsCNIslk9_yBluJoYTvYF4Jss7N4",
-            range: "LIST",
-        });
+    const sheets = google.sheets({ version: "v4", auth });
 
-        return Response.json({
-            data: response.data.values,
-        });
-    } catch (err: any) {
-        return Response.json({ error: err.message }, { status: 500 });
-    }
+    const response = await sheets.spreadsheets.values.get({
+      spreadsheetId: sheetId,
+      range: sheetName,
+    });
+
+    return Response.json({
+      data: response.data.values,
+    });
+  } catch (err: any) {
+    return Response.json({ error: err.message }, { status: 500 });
+  }
 }
