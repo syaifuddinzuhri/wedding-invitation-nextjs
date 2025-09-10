@@ -86,13 +86,18 @@ const CountdownSection = () => {
             <h5>Detik</h5>
           </div>
         </div>
-        <button
-          data-aos="fade-up"
+        <div
+          className="h-60 w-100 rounded-xl overflow-hidden border-4 border-yellow-600 shadow-lg"
+          data-aos="zoom-in"
           data-aos-delay="200"
-          className="cursor-pointer bg-white border-1 b-yellow-100 hover:shadow-lg main-color font-medium py-2 px-8 rounded-full transition"
         >
-          SAVE THE DATE
-        </button>
+          <img
+            src="/images/pengantin1.jpeg"
+            alt=""
+            className="w-full h-full object-cover"
+            style={{ objectPosition: "center 25%" }}
+          />
+        </div>
       </div>
     </div>
   );

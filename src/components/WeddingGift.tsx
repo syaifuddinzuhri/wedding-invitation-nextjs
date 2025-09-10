@@ -31,7 +31,7 @@ const WeddingGift = () => {
     <div className="font-roboto-slab py-10 px-5 flex flex-col justify-center items-center gap-5 home-section">
       <img
         src="/images/motif-9.svg"
-        className="w-30"
+        className="w-30 scale-infinite"
         alt=""
         data-aos="fade-down"
         data-aos-delay="200"
@@ -70,9 +70,9 @@ const WeddingGift = () => {
         data-aos="fade-left"
         data-aos-delay="1600"
       >
-        <img src="/images/spay.png" alt="" />
+        <img src="/images/mandiri.png" alt="" />
         <button
-          onClick={() => handleCopy("085646272106")}
+          onClick={() => handleCopy("1440026280658")}
           className="absolute bottom-[20] text-gray-700 left-[30] cursor-pointer bg-white border-1 b-gray-100 hover:shadow-lg font-medium text-sm py-1 px-4 rounded-full transition"
         >
           Salin

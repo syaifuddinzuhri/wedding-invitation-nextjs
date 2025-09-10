@@ -19,12 +19,36 @@ const HomeSection = () => {
   return (
     <div
       ref={sectionRef}
-      className="h-screen py-10 px-5 flex flex-col justify-center items-center gap-5 home-section"
+      className="h-screen py-10 relative px-5 flex flex-col justify-center items-center gap-5 home-section"
     >
+      <img
+        src={"/images/motif-6.svg"}
+        className="absolute top-2 left-2 w-30 transform scale-x-[-1] scale-y-[-1]"
+        alt=""
+      />
+      <img
+        src={"/images/motif-6.svg"}
+        className="absolute top-2 right-2 w-30 transform scale-y-[-1]"
+        alt=""
+      />
+      <img
+        src={"/images/motif-6.svg"}
+        className="absolute bottom-2 left-2 w-30 transform scale-x-[-1] "
+        alt=""
+      />
+      <img
+        src={"/images/motif-6.svg"}
+        className="absolute bottom-2 right-2 w-30 transform "
+        alt=""
+      />
       <h3 className="text-2xl main-color font-italiana font-bold text-center">
         The Wedding Of
       </h3>
-      <img src={"/images/motif-15.png"} className="w-80 my-16" alt="" />
+      <img
+        src={"/images/motif-15.png"}
+        className="w-80 my-16 scale-infinite"
+        alt=""
+      />
 
       <div>
         <p className="font-roboto-slab text-center text-sm main-color">

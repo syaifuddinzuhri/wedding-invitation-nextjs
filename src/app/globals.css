@@ -196,3 +196,23 @@ a {
   right: 0;
   width: 25%;
 }
+
+.scale-infinite {
+  display: inline-block; /* atau block sesuai elemen */
+  animation: scaleUpDown 2s ease-in-out infinite;
+  backface-visibility: hidden; /* bantu render lebih halus */
+  transform: translateZ(0);
+  transform-origin: center; /* pusat animasi */
+}
+
+@keyframes scaleUpDown {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03); /* ukuran maksimal */
+  }
+  100% {
+    transform: scale(1);
+  }
+}

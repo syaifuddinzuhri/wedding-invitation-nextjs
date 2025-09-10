@@ -19,7 +19,7 @@ const OpeningPage = ({ openButton }: OpeningPageProps) => {
       gsap.timeline().from(buttonRef.current, {
         opacity: 0,
         y: 200,
-        duration: 4,
+        duration: 5,
         ease: "power3.out",
       });
     }
@@ -64,7 +64,7 @@ const OpeningPage = ({ openButton }: OpeningPageProps) => {
               data-aos-delay="1000"
               data-aos-once="true"
               src={"/images/motif-4.png"}
-              className="motif-2 mt-10 mb-10"
+              className="motif-2 mt-10 mb-10 scale-infinite"
               alt=""
             />
             <h1
