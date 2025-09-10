@@ -6,7 +6,7 @@ const FooterSection = () => {
       <div className="py-6 px-5">
         <img
           data-aos="zoom-in"
-          data-aos-delay="2000"
+          data-aos-delay="1000"
           src="/images/save.png"
           className="w-70 mt-10 mx-auto mb-4"
           alt=""
@@ -14,27 +14,27 @@ const FooterSection = () => {
         <h1
           className="font-pacifico text-3xl"
           data-aos="zoom-in"
-          data-aos-delay="2000"
+          data-aos-delay="1000"
         >
           Rikha & Solihin
         </h1>
         <h1
           className="font-pacifico text-xl"
           data-aos="zoom-in"
-          data-aos-delay="2000"
+          data-aos-delay="1000"
         >
           26.09.2025
         </h1>
         <h1
           className="font-roboto-slab font-bold text-xl mt-10 mb-6"
           data-aos="zoom-in"
-          data-aos-delay="2000"
+          data-aos-delay="1000"
         >
           TERIMA KASIH
         </h1>
         <p
           data-aos="zoom-in"
-          data-aos-delay="2000"
+          data-aos-delay="1000"
           className="font-roboto-slab text-sm"
         >
           Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila
@@ -42,12 +42,7 @@ const FooterSection = () => {
           kehadiran dan doa restunya, kami mengucapkan terima kasih.
         </p>
       </div>
-      <img
-        src="/images/footer.png"
-        alt=""
-        data-aos="fade-up"
-        data-aos-delay="2000"
-      />
+      <img src="/images/footer.png" alt="" />
     </div>
   );
 };
