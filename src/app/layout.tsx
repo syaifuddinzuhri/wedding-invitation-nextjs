@@ -84,7 +84,7 @@ export default function RootLayout({
         className={`${pacifico.variable} ${robotoSlab.variable} ${italiana.variable}  ${poppins.variable} ${geistSans.variable} ${geistMono.variable} ${cookie.variable} ${imperial.variable} ${lobster.variable} flex min-h-screen justify-center bg-color`}
       >
         <div className="w-full max-w-[500px] min-h-screen shadow-md overflow-hidden relative">
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div></div>}>
             <AOSInit />
             <SheetProvider>{children}</SheetProvider>
             <ToastContainer />
