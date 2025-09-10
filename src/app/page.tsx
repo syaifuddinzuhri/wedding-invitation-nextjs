@@ -2,29 +2,31 @@
 
 import InvitationPage from "@/pages/InvitationPage";
 import OpeningPage from "@/pages/OpeningPage";
-import React, { useEffect, useRef, useState } from "react";
-import { gsap } from "gsap";
+import React, { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const [fade, setFade] = useState<boolean>(false);
 
   const openButton = () => {
-    setIsOpen(true);
+    // Mulai animasi fade out
+    setFade(true);
+    setTimeout(() => {
+      setIsOpen(true); // Tampilkan InvitationPage
+      setFade(false); // Fade in
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll ke atas
+    }, 300); // durasi fade out 300ms
   };
 
-  useEffect(() => {
-    if (isOpen) {
-      // Smooth scroll ke top viewport
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  }, [isOpen]);
-
   return (
-    <div ref={containerRef}>
+    <div
+      className={`transition-opacity duration-300 ${
+        fade ? "opacity-0" : "opacity-100"
+      }`}
+    >
       {isOpen ? <InvitationPage /> : <OpeningPage openButton={openButton} />}
     </div>
   );
 };
 
-export default page;
+export default Page;
