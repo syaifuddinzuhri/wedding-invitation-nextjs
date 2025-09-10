@@ -69,8 +69,8 @@ const lobster = Lobster({
 });
 
 export const metadata: Metadata = {
-  title: "Wedding Invitation",
-  description: "Roikhatul Jannah & Muhammad Solihin",
+  title: "Wedding Invitation (Rikha & Solihin)",
+  description: "Jum'at, 26 September 2025",
 };
 
 export default function RootLayout({
