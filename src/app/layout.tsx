@@ -14,6 +14,7 @@ import "./globals.css";
 import { SheetProvider } from "@/contexts/SheetContext";
 import { ToastContainer, toast } from "react-toastify";
 import AOSInit from "@/components/AOSInit";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -83,9 +84,11 @@ export default function RootLayout({
         className={`${pacifico.variable} ${robotoSlab.variable} ${italiana.variable}  ${poppins.variable} ${geistSans.variable} ${geistMono.variable} ${cookie.variable} ${imperial.variable} ${lobster.variable} flex min-h-screen justify-center bg-color`}
       >
         <div className="w-full max-w-[500px] min-h-screen shadow-md overflow-hidden relative">
-          <AOSInit />
-          <SheetProvider>{children}</SheetProvider>
-          <ToastContainer />
+          <Suspense fallback={<div>Loading...</div>}>
+            <AOSInit />
+            <SheetProvider>{children}</SheetProvider>
+            <ToastContainer />
+          </Suspense>
         </div>
       </body>
     </html>
