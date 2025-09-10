@@ -14,30 +14,22 @@ const OpeningPage = ({ openButton }: OpeningPageProps) => {
   const motifRef = useRef<HTMLImageElement | null>(null);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
-  useEffect(() => {
-    if (motifRef.current && buttonRef.current) {
-      gsap.timeline().from(buttonRef.current, {
-        opacity: 0,
-        y: 200,
-        duration: 5,
-        ease: "power3.out",
-      });
-    }
-  }, []);
-
   return (
     <div className="min-h-screen relative bg-white section opening-page">
-      <div className="opening-content">
+      <div className="opening-content w-full min-h-screen">
         <img
-          src="/images/motif-3.webp"
-          className="motif-1 absolute bottom-0"
-          ref={motifRef}
+          src="/images/motif-7.svg"
+          className="absolute bottom-2 left-2 transform w-20"
+        />
+        <img
+          src="/images/motif-7.svg"
+          className="absolute bottom-2 right-2 transform w-20 transform scale-x-[-1]"
         />
 
         <div className="section-content">
           <img
             src={"/images/motif-9.svg"}
-            className=""
+            className="w-50"
             alt=""
             data-aos="fade-down"
             data-aos-once="true"
@@ -50,21 +42,13 @@ const OpeningPage = ({ openButton }: OpeningPageProps) => {
           >
             Wedding Invitation
           </h1>
-          <h1
-            className="font-lobster text-3xl text-center main-color"
-            data-aos="zoom-in"
-            data-aos-delay="800"
-            data-aos-once="true"
-          >
-            Rikha & Solihin
-          </h1>
           <div className="flex flex-col items-center">
             <img
               data-aos="zoom-in"
               data-aos-delay="1000"
               data-aos-once="true"
               src={"/images/motif-4.png"}
-              className="motif-2 mt-10 mb-10 scale-infinite"
+              className="motif-2 mt-10 mb-5 w-70 scale-infinite"
               alt=""
             />
             <h1

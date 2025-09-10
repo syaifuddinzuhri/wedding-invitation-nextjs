@@ -44,7 +44,7 @@ const WeddingGift = () => {
         WEDDING GIFT
       </h1>
       <p
-        className="text-center text-sm main-color"
+        className="text-center text-xs main-color"
         data-aos="zoom-in"
         data-aos-delay="200"
       >
@@ -55,7 +55,7 @@ const WeddingGift = () => {
       <div
         className="rounded-xl overflow-hidden shadow-lg relative"
         data-aos="fade-right"
-        data-aos-delay="1000"
+        data-aos-delay="500"
       >
         <img src="/images/bri.png" alt="" />
         <button
@@ -68,7 +68,7 @@ const WeddingGift = () => {
       <div
         className="rounded-xl overflow-hidden shadow-lg relative"
         data-aos="fade-left"
-        data-aos-delay="1600"
+        data-aos-delay="600"
       >
         <img src="/images/mandiri.png" alt="" />
         <button

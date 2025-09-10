@@ -43,7 +43,7 @@ const FooterSection = () => {
         <p
           data-aos="zoom-in"
           data-aos-delay="500"
-          className="font-roboto-slab text-sm"
+          className="font-roboto-slab text-xs"
         >
           Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila
           Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas

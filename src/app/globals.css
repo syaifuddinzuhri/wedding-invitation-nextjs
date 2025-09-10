@@ -76,7 +76,6 @@ a {
 .opening-page {
   background-color: #fff7e4;
   position: relative;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +99,6 @@ a {
 .opening-content {
   position: relative;
   z-index: 1;
-  min-height: 100vh;
   padding: 40px 0;
   display: flex;
   flex-direction: column;

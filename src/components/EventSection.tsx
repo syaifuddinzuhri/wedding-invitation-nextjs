@@ -7,7 +7,7 @@ const EventSection = () => {
         <div
           data-aos="fade-right"
           data-aos-delay="200"
-          className="absolute top-2 left-0 w-[30%]"
+          className="absolute top-2 left-0 w-[20%]"
         >
           <img
             src="/images/motif-16.png"
@@ -19,7 +19,7 @@ const EventSection = () => {
         <div
           data-aos="fade-left"
           data-aos-delay="200"
-          className="absolute top-2 right-0 w-[30%]"
+          className="absolute top-2 right-0 w-[20%]"
         >
           <img src="/images/motif-16.png" alt="" className="w-full" />
         </div>
@@ -51,7 +51,7 @@ const EventSection = () => {
         <div
           data-aos="fade-right"
           data-aos-delay="200"
-          className="absolute top-2 left-0 w-[30%]"
+          className="absolute top-2 left-0 w-[20%]"
         >
           <img
             src="/images/motif-16.png"
@@ -63,7 +63,7 @@ const EventSection = () => {
         <div
           data-aos="fade-left"
           data-aos-delay="200"
-          className="absolute top-2 right-0 w-[30%]"
+          className="absolute top-2 right-0 w-[20%]"
         >
           <img src="/images/motif-16.png" alt="" className="w-full" />
         </div>

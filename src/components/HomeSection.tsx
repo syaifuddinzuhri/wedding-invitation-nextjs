@@ -19,26 +19,26 @@ const HomeSection = () => {
   return (
     <div
       ref={sectionRef}
-      className="h-screen py-10 relative px-5 flex flex-col justify-center items-center gap-5 home-section"
+      className="min-h-screen py-10 relative px-5 flex flex-col justify-center items-center gap-5 home-section"
     >
       <img
         src={"/images/motif-6.svg"}
-        className="absolute top-2 left-2 w-30 transform scale-x-[-1] scale-y-[-1]"
+        className="absolute top-2 left-2 w-20 transform scale-x-[-1] scale-y-[-1]"
         alt=""
       />
       <img
         src={"/images/motif-6.svg"}
-        className="absolute top-2 right-2 w-30 transform scale-y-[-1]"
+        className="absolute top-2 right-2 w-20 transform scale-y-[-1]"
         alt=""
       />
       <img
         src={"/images/motif-6.svg"}
-        className="absolute bottom-2 left-2 w-30 transform scale-x-[-1] "
+        className="absolute bottom-2 left-2 w-20 transform scale-x-[-1] "
         alt=""
       />
       <img
         src={"/images/motif-6.svg"}
-        className="absolute bottom-2 right-2 w-30 transform "
+        className="absolute bottom-2 right-2 w-20 transform "
         alt=""
       />
       <h3 className="text-2xl main-color font-italiana font-bold text-center">
@@ -50,7 +50,7 @@ const HomeSection = () => {
         alt=""
       />
 
-      <div>
+      <div className="pb-10">
         <p className="font-roboto-slab text-center text-sm main-color">
           Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu
           istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa

@@ -87,7 +87,7 @@ const CountdownSection = () => {
           </div>
         </div>
         <div
-          className="h-60 w-100 rounded-xl overflow-hidden border-4 border-yellow-600 shadow-lg"
+          className="h-50 w-80 rounded-xl overflow-hidden border-4 border-yellow-600 shadow-lg"
           data-aos="zoom-in"
           data-aos-delay="200"
         >

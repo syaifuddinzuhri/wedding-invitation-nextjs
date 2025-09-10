@@ -10,31 +10,18 @@ const page = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const openButton = () => {
-    if (containerRef.current) {
-      gsap.to(containerRef.current, {
-        opacity: 0,
-        y: -50,
-        duration: 0.6,
-        onComplete: () => setIsOpen(true),
-      });
-    } else {
-      setIsOpen(true);
-    }
+    setIsOpen(true);
   };
 
   useEffect(() => {
-    if (containerRef.current) {
-      gsap.fromTo(
-        containerRef.current,
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 0.6 }
-      );
+    if (isOpen) {
+      // Smooth scroll ke top viewport
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [isOpen]);
 
   return (
     <div ref={containerRef}>
-      {/* <InvitationPage/> */}
       {isOpen ? <InvitationPage /> : <OpeningPage openButton={openButton} />}
     </div>
   );
