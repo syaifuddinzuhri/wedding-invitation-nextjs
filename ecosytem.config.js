@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "rs-invitation",
-      script: "yarn",
+      script: "npm",
       args: "start",
       env: {
         NODE_ENV: "production",
