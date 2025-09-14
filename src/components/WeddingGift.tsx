@@ -1,5 +1,6 @@
 import React from "react";
 import { toast } from "react-toastify";
+import ListOfGreetingSection from "./ListOfGreetingSection";
 
 const WeddingGift = () => {
   async function handleCopy(text: string) {
@@ -78,6 +79,8 @@ const WeddingGift = () => {
           Salin
         </button>
       </div>
+
+      <ListOfGreetingSection />
     </div>
   );
 };

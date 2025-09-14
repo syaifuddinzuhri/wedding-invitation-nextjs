@@ -1,0 +1,30 @@
+[
+  {
+    "id": "b4cf409b-2194-49dc-b99c-bcbdbc3283b2",
+    "name": "Syaifuddin",
+    "comment": "Jadi, cukup sesuaikan pembacaan data di frontend dengan struktur response dari API.",
+    "type": "hadir",
+    "createdAt": "2025-09-14T10:26:50.092Z"
+  },
+  {
+    "id": "1715ebac-1efd-411f-a580-143621976be3",
+    "name": "asdadasd",
+    "comment": "Jadi, cukup sesuaikan pembacaan data di frontend dengan struktur response dari API.",
+    "type": "tidak_hadir",
+    "createdAt": "2025-09-14T10:27:04.500Z"
+  },
+  {
+    "id": "7758f3fb-bbe0-4fa3-93bc-89035c04b679",
+    "name": "iwugdiasugduia",
+    "comment": "Jadi, cukup sesuaikan pembacaan data di frontend dengan struktur response dari API.",
+    "type": "hadir",
+    "createdAt": "2025-09-14T10:27:10.316Z"
+  },
+  {
+    "id": "81df325a-8d08-42db-a407-13c89590602f",
+    "name": "asdasd",
+    "comment": "iwugdiasugduia\n\nJadi, cukup sesuaikan pembacaan data di frontend dengan struktur response dari API.",
+    "type": "hadir",
+    "createdAt": "2025-09-14T10:27:40.093Z"
+  }
+]
