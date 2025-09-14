@@ -5,13 +5,20 @@ const PeopleSection = () => {
     <div className="min-h-screen relative overflow-hidden bg-color-2 p-5 flex flex-col justify-center items-center gap-5 people-section">
       <div className="relative h-full w-full bg-color rounded-xl relative p-8 bg-white flex flex-col justify-around items-center text-center">
         <div className="flex flex-col items-center gap-5">
-          <img
+          <h5
+            className="mt-10 font-lobster main-color text-xs"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            Assalaamu'alaikum Warahmatullaahi Wabarakaatuh
+          </h5>
+          {/* <img
             src="/images/bismillah.png"
             className="w-50"
             alt=""
             data-aos="zoom-in"
             data-aos-delay="200"
-          />
+          /> */}
           <p
             data-aos="zoom-in"
             data-aos-delay="300"
@@ -30,9 +37,11 @@ const PeopleSection = () => {
           >
             Rikha
           </p> */}
-          <div className="overflow-hidden rounded-full w-40 h-60 border-3 border-yellow-700 mx-auto mb-4 shadow-lg"
-           data-aos="zoom-in"
-            data-aos-delay="100">
+          <div
+            className="overflow-hidden rounded-full w-40 h-60 border-3 border-yellow-700 mx-auto mb-4 shadow-lg"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
             <img
               src="/images/female.png"
               alt=""

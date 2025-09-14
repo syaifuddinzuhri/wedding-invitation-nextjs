@@ -49,6 +49,10 @@ const FooterSection = () => {
           Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas
           kehadiran dan doa restunya, kami mengucapkan terima kasih.
         </p>
+
+        <h5 className="mt-10 font-lobster text-xs" data-aos="zoom-in">
+          Wassalaamu'alaikum Warahmatullaahi Wabarakaatuh
+        </h5>
       </div>
       <img src="/images/footer.png" alt="" className="scale-infinite" />
     </div>
