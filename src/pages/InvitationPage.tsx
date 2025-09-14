@@ -38,16 +38,14 @@ const InvitationPage = () => {
       <div ref={giftRef}>
         <WeddingGift />
       </div>
-      <div ref={noteRef}>
-        <FooterSection />
-      </div>
+      <FooterSection />
 
       <Navbar
         scrollToHome={() => scrollTo(homeRef)}
         scrollToPeople={() => scrollTo(peopleRef)}
         scrollToDate={() => scrollTo(dateRef)}
         scrollToGift={() => scrollTo(giftRef)}
-        scrollToNote={() => scrollTo(noteRef)}
+        scrollToNote={() => scrollTo(giftRef)}
       />
     </div>
   );
