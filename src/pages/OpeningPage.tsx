@@ -35,7 +35,7 @@ const OpeningPage = ({ openButton }: OpeningPageProps) => {
             data-aos-once="true"
           />
           <h1
-            className="font-cookie text-5xl text-center main-color"
+            className="font-cookie text-5xl text-center main-color mt-8"
             data-aos="fade-down"
             data-aos-delay="500"
             data-aos-once="true"
@@ -47,7 +47,7 @@ const OpeningPage = ({ openButton }: OpeningPageProps) => {
               data-aos="zoom-in"
               data-aos-delay="1000"
               data-aos-once="true"
-              src={"/images/motif-4.png"}
+              src={"/images/motif-15.png"}
               className="motif-2 mt-10 mb-5 w-70 scale-infinite"
               alt=""
             />

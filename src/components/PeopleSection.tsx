@@ -6,11 +6,11 @@ const PeopleSection = () => {
       <div className="relative h-full w-full bg-color rounded-xl relative p-8 bg-white flex flex-col justify-around items-center text-center">
         <div className="flex flex-col items-center gap-5">
           <h5
-            className="mt-10 font-lobster main-color text-xs"
+            className="mt-10 font-lobster main-color text-xl"
             data-aos="zoom-in"
             data-aos-delay="300"
           >
-            Assalaamu'alaikum Warahmatullaahi Wabarakaatuh
+            Assalaamu'alaikum Wr. Wb.
           </h5>
           {/* <img
             src="/images/bismillah.png"

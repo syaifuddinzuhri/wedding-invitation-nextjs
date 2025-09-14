@@ -19,7 +19,7 @@ const GuestBox = () => {
   return (
     <div className="w-80 my-6 px-6">
       <p className="text-center mb-2 text-xs">Kepada Yth.</p>
-      <div className="border border-yellow-800 rounded-lg py-4 px-6 text-center border-3 bg-box">
+      <div className="rounded-lg py-4 px-6 text-center shadow-2xl bg-box">
         <h5 className="font-bold">{guestData?.name}</h5>
         <div className="h-[20]"></div>
         <p>{guestData?.address}</p>

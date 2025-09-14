@@ -32,26 +32,18 @@ const FooterSection = () => {
         >
           26.09.2025
         </h1>
-
-        <h1
-          className="font-roboto-slab font-bold text-xl mt-10 mb-6"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          TERIMA KASIH
-        </h1>
         <p
           data-aos="zoom-in"
           data-aos-delay="500"
-          className="font-roboto-slab text-xs"
+          className="mt-8 font-roboto-slab text-xs"
         >
           Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila
           Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas
           kehadiran dan doa restunya, kami mengucapkan terima kasih.
         </p>
 
-        <h5 className="mt-10 font-lobster text-xs" data-aos="zoom-in">
-          Wassalaamu'alaikum Warahmatullaahi Wabarakaatuh
+        <h5 className="mt-10 font-lobster text-xl" data-aos="zoom-in">
+          Wassalaamu'alaikum Wr. Wb.
         </h5>
       </div>
       <img src="/images/footer.png" alt="" className="scale-infinite" />
