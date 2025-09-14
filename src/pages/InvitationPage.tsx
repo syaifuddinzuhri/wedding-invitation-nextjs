@@ -1,5 +1,6 @@
 "use client";
 
+import AudioPlayer from "@/components/AudioPlayer";
 import CountdownSection from "@/components/CountdownSection";
 import EventSection from "@/components/EventSection";
 import FooterSection from "@/components/FooterSection";

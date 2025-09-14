@@ -6,6 +6,7 @@ import {
   MdNoteAlt,
   MdPeopleAlt,
 } from "react-icons/md";
+import AudioPlayer from "./AudioPlayer";
 
 interface NavbarProps {
   scrollToHome: () => void;
@@ -55,6 +56,8 @@ const Navbar: React.FC<NavbarProps> = ({
         >
           <MdNoteAlt />
         </button>
+
+        <AudioPlayer />
       </div>
     </div>
   );
