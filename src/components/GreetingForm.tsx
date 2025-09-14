@@ -73,7 +73,7 @@ const GreetingForm: React.FC<GreetingFormProps> = ({ onSubmitSuccess }) => {
   };
 
   return (
-    <div className="py-10">
+    <div className="py-10" data-aos="zoom-in" data-aos-delay="200">
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <input
@@ -94,10 +94,9 @@ const GreetingForm: React.FC<GreetingFormProps> = ({ onSubmitSuccess }) => {
             onChange={(e) => setComment(e.target.value)}
           ></textarea>
         </div>
-
-        <div className="mb-3">
+        <div className="relative mb-3">
           <select
-            className="w-full bg-white rounded-md py-2 px-3 text-sm border border-gray-300 focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 outline-none"
+            className="w-full bg-white rounded-md py-2 px-3 text-sm border border-gray-300 focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 outline-none appearance-none"
             value={type}
             onChange={(e) => setType(e.target.value as "hadir" | "tidak_hadir")}
           >
@@ -107,6 +106,21 @@ const GreetingForm: React.FC<GreetingFormProps> = ({ onSubmitSuccess }) => {
             <option value="hadir">Hadir</option>
             <option value="tidak_hadir">Tidak Hadir</option>
           </select>
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+            <svg
+              className="w-4 h-4 text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
         </div>
 
         <button
