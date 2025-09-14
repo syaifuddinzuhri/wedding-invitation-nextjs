@@ -73,7 +73,7 @@ const GreetingForm: React.FC<GreetingFormProps> = ({ onSubmitSuccess }) => {
   };
 
   return (
-    <div className="py-10">
+    <div className="py-10" data-aos="zoom-in" data-aos-delay="200">
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <input

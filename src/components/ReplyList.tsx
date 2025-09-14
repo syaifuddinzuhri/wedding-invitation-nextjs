@@ -50,7 +50,7 @@ const ReplyList: React.FC<ReplyListProps> = ({ refresh }) => {
   };
 
   return (
-    <div className="mt-10">
+    <div className="mt-10" data-aos="zoom-in" data-aos-delay="200">
       {loading ? (
         <p className="text-center text-gray-500 py-5">Loading...</p>
       ) : currentItems.length === 0 ? (

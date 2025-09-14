@@ -7,11 +7,9 @@ import "aos/dist/aos.css";
 export default function AOSInit() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      once: false,
-      mirror: true,
+      duration: 2000,
     });
   }, []);
 
-  return null; // tidak render apa-apa
+  return null;
 }
